@@ -1,0 +1,221 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* --------------------- Ejercicio Completo --------------------- */
+#website{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 6;
+
+    background: blue;
+    color: white;
+}
+
+#menu{
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+    line-height: 50px;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+#contenido{
+    grid-column: 1 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+
+    background: #eee;
+}
+
+#contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    grid-column: 5 / 6;
+
+    background: orange;
+    color: white;
+}
+
+#pie-pagina{
+    grid-column: 1 / 6;
+
+    background-color: black;
+    color: white;
+}
+
+/* --------------------- Ejemplos --------------------- */
+
+.layout{
+    width: 1200px;
+    height: 400px;
+    margin: 0px auto;
+
+    /* Definir el grid layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat();
+
+    /* ESpacio entre elementos grid */
+    grid-gap: 10px;
+    padding: 10px;
+    border: 3px solid orangered;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    background: gray;
+}
+
+.layout .red{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background: red;
+}
+
+.layout .blue{
+    background: blue;
+}
+
+.layout .green{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: green;
+}
+
+.layout .pink{
+    background: palevioletred;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.layout .orange{
+    background: orange;
+}
+
+.layout .lightblue{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: lightblue;
+}
+
+/* --------------------- Slider.Show By Reaper  --------------------- */
+#hcg-slider-1 .hcg-slide-container {
+    width: auto;
+    height: auto;
+}
+.hcg-slider {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.hcg-slides {
+    display: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 1px #a0a0a0;
+}
+.hcg-slides img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}
+.hcg-slide-text {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 3px 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 50%;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+    background-color: rgba(255,255,255,0.30);
+    display: inline-block;
+    transform: translate(-50%, -5px);
+}
+.hcg-slide-dot-control {
+    margin-top: 10px;
+    text-align: center;
+}
+.hcg-slide-dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+    background-color: #717171;
+}
+.hcg-slide-number {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 7px;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255,255,255,0.30);
+}
+/************CSS Animation ByReaper98 2023***********/
+
+.animated { 
+    animation-name: fadeInDownBig; 
+    animation-duration: 1s;
+}
+@keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInDownBig {
+    animation-name: fadeInDownBig;
+}

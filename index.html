@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS - GRID</title>
+    <link rel="stylesheet" href="styles.css">
+        <!-- 
+            Slider.Show By Reaper
+    Relacionamos direccion a nuestros stilos para el slider usando API FrameWork JavaScript de GoogleApis
+    -->
+
+    <script src="ism/js/ism-2.2.min.js"></script>
+       
+
+
+</head>
+
+<body>
+    <!-- 
+        Cabecera (Arriba del todo y que ocupe el 100%)
+            Titulo
+        Menú (Debajo de la cabecera y ocupaq el 100%)
+        Contenido (Debajo del menu y al lado lateral)
+        Lateral (Debajo del menu y a la derecha de contenido)
+        Footer (Abajo del todo y ocupa el 100%)
+    -->
+
+
+    
+
+    <div id="website">
+        <header id="cabecera">
+            <h1>Titulo de mi Web</h1>
+        </header>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Pagina 1</a></li>
+                <li><a href="#">Pagina 2</a></li>
+                <li><a href="#">Pagina 3</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+            <article>
+                Articulo 1
+            </article>
+            <article>
+                Articulo 2
+            </article>
+            <article>
+                Articulo 3
+            </article>
+            <article>
+                Articulo 4
+            </article>
+            <article>
+                Articulo 5
+            </article>
+        </section>
+
+        <aside id="lateral">
+            <h2>Barra lateral</h2>
+        </aside>
+
+        <footer id="pie-pagina">Master en CSS con Juan Nieto &copy;</footer>
+    </div>
+
+    <hr>
+    <h1>Master en CSS con Diego Sepulveda y Juan Nieto, Documentado por Jose Vergara!!</h1>
+    <p>Hoy aprendemos CSS Grid una nueva forma de maquetar web</p>
+
+    <div class="layout">
+        <div class="caja red">
+            Primera caja
+        </div>
+        <div class="caja green">
+            Segunda caja
+        </div>
+        <div class="caja blue">
+            Tercera caja
+        </div>
+        <div class="caja pink">
+            Cuarta caja
+        </div>
+        <div class="caja orange">
+            Quinta caja
+        </div>
+        <div class="caja lightblue">
+            Sexta caja
+        </div>
+    </div>
+
+
+
+    
+    <!-- 
+Cuerpo del Slider
+
+    -->
+
+
+        <div id="hcg-slider-1" class="hcg-slider">
+            <div class="hcg-slide-container">
+                <div class="hcg-slider-body">
+                    <a class="hcg-slides animated" style="display:flex">
+                        <span class="hcg-slide-number">1/5</span>
+                        <img src="https://www.html-code-generator.com/images/slider/1.png" alt="image 1">
+                        <span class="hcg-slide-text">image 1</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hcg-slide-dot-control"></div>
+        </div>
+    
+        <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
